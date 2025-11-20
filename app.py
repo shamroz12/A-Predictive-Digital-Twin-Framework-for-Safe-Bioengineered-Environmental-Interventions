@@ -13,14 +13,14 @@ import matplotlib.pyplot as plt
 
 st.set_page_config(page_title="Digital Twin for Bioenvironment", layout="wide")
 
-st.title("🧠 Digital Twin for Biological Environmental Forecasting")
+st.title("Digital Twin for Biological Environmental Forecasting")
 st.markdown("""
 This software simulates how biological interventions impact the environment. Use it to test and visualize predictions for:
 - **PM2.5 Air Pollution** reduction using biofilters
 - **Microplastic Degradation** using PETase enzymes
 - **Malaria Incidence** drop via gene drives
 
-🌍 Suitable for researchers in environmental science, synthetic biology, and public health.
+ Suitable for researchers in environmental science, synthetic biology, and public health.
 """)
 
 col1, col2 = st.columns(2)
@@ -60,7 +60,7 @@ def run_simulations():
 t1, pm_vals, t2, plast, t3, malaria = run_simulations()
 
 # Display outputs
-st.subheader("📊 Forecast Outputs")
+st.subheader("Forecast Outputs")
 chart1, chart2, chart3 = st.columns(3)
 
 with chart1:
@@ -92,7 +92,7 @@ with chart3:
     st.pyplot(fig)
 
 st.markdown("""
-### 🔬 Insights:
+### Insights:
 - **PM2.5** levels decline rapidly with higher efficiency filters
 - **Plastic decay** is faster with higher PETase rate and warmer waters
 - **Malaria cases** drop under gene drive, but resistance slows effect
